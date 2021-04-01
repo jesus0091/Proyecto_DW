@@ -1,0 +1,10 @@
+$dodger-blue: rgba(14, 141, 253);
+$white: rgb(255, 255, 255);
+$green: rgb(0, 128, 0);
+$white-smoke: rgba(245, 243, 244, 0.9);
+$red: rgb(255, 0, 0);
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

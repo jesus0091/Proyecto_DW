@@ -1,0 +1,20 @@
+.imagen_home {
+    background-image: url(../imagenes/home_img-02.png), url(/imagenes/footer_img-03.png) ;
+    background-position: top, bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 100%;
+
+    .footer_img{
+    background-image: url(/imagenes/footer_img-03.png);
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: auto;
+    }
+
+}
+html{
+    scroll-behavior: smooth;
+}

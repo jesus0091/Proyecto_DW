@@ -1,0 +1,66 @@
+.s_galery{
+    @media only screen and (min-width: 992px) {
+        min-height: 100vh;
+    } 
+
+    .title_galery {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        color: darken($dodger-blue, 30%);
+        
+        .icon_galery {
+            height: 50px;
+        }
+        .text_galery{
+            font-size: 50px;
+            margin-left: 10px;
+        }
+
+        @media only screen and (min-width: 992px) {
+            font-size: 50px;
+            text-align: end;
+            margin-top: 150px;
+        }
+    }
+    nav{
+        .navigation {
+            border: none;
+            a{
+                background-color: $white-smoke;
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                margin-right: 10px;
+                color: darken($dodger-blue, 30%);
+                border: none;
+                img {
+                    height: 25px;
+                }
+            }
+            .active{
+                background-color: darken($dodger-blue, 30%);
+                border: none;
+                font-weight: bold;
+                color: $white;
+            }
+        }
+        
+    }
+    .g_content {
+        background-color: darken($dodger-blue, 30%);
+        border-radius: 0 15px 15px 15px;
+
+        .g_pic{
+            max-height: 300px;
+            overflow: hidden;
+            border-radius: 15px;
+
+            img {
+                border-radius: 5px;
+                width: 100%
+                
+            };
+        }
+    }
+}
