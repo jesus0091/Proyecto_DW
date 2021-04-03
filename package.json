@@ -9,5 +9,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesus0091/Proyecto_DW.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jesus0091/Proyecto_DW/issues"
+  },
+  "homepage": "https://github.com/jesus0091/Proyecto_DW#readme",
   "description": ""
 }
