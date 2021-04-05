@@ -1,0 +1,146 @@
+@import 'variables.scss';
+
+/*------------------------------------- CONTACT ------------------------------------*/
+.contact_style {
+    padding: 15px !important;
+    background: darken(transparentize($dodger-blue, 0.1), 30%);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: 15px;
+
+    .form_style {
+        padding: 20px !important;
+        border-radius: 10px;
+        background-color: $white-smoke;
+
+        h3 {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            color: darken($dodger-blue, 30%);
+        }
+
+        .inp {
+            position: relative;
+            margin: auto;
+            width: 100%;
+            max-width: 280px;
+            overflow: hidden;
+
+            .label {
+                position: absolute;
+                top: 20px;
+                left: 12px;
+                font-size: 16px;
+                color: rgba($dark, .5);
+                font-weight: 500;
+                transform-origin: 0 0;
+                transform: translate3d(0, 0, 0);
+                transition: all .2s ease;
+                pointer-events: none;
+            }
+
+            .focus-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($dark, .05);
+                z-index: -1;
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+
+            input,
+            textarea {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 100%;
+                border: 0;
+                font-family: inherit;
+                padding: 5px 12px 5px 12px;
+                margin-top: 20px;
+                height: 35px;
+                font-size: 16px;
+                font-weight: 400;
+                background: none;
+                box-shadow: inset 0 -1px 0 rgba($dark, .3);
+                color: $dark;
+                transition: all .15s ease;
+                resize: none;
+
+                &:not(:placeholder-shown)+.label {
+                    color: rgba($dark, .5);
+                    transform: translate3d(0, -20px, 0) scale(.75);
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: inset 0 -2px 0 $dodger-blue;
+
+                    +.label {
+                        color: $dodger-blue;
+                        transform: translate3d(0, -20px, 0) scale(.75);
+                    }
+
+                    +.focus-bg {
+                        transform: scaleX(1);
+                        transition: all .1s ease
+                    }
+                }
+            }
+        }
+
+        .f_buttons {
+            margin-top: 10px;
+
+            .btn_erase {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                color: darken($white, 30%);
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 100px;
+                margin: 5px;
+                border: none !important;
+                background-color: darken($red, 10%);
+
+                &:hover {
+                    color: $white;
+                    background-color: $red;
+                }
+
+            }
+
+            .btn_submit {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                color: darken($white, 30%);
+                padding: 10px;
+                font-size: 20px;
+                border-radius: 100px;
+                margin: 5px;
+                border: none !important;
+                background-color: darken($green, 10%);
+
+                &:hover {
+                    color: $white;
+                    background-color: $green;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+/*------------------------------------- CONTACT ------------------------------------*/

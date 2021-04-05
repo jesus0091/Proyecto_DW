@@ -92,7 +92,7 @@
         background-color: $white-smoke;
         align-items: center;
         padding: 7px;
-        
+
       }
     }
   }
@@ -204,7 +204,7 @@
           color: darken($dodger-blue, 30%);
           background-color: white;
           font-family: 'Roboto', sans-serif;
-          
+
           @media only screen and (min-width: 992px) {
             font-size: 16px;
           }
@@ -349,6 +349,7 @@
         }
       }
     }
+
     .date {
       position: absolute;
       top: -30px;
@@ -357,7 +358,7 @@
     }
   }
 
-  
+
 }
 
 .wrapper {
@@ -367,6 +368,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .btn {
     background: darken($dodger-blue, 30%);
     width: 40px;
@@ -377,9 +379,9 @@
     box-shadow: 0 10px 30px rgba(#414856, 0.05);
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     animation: plus-animation-reverse .5s ease-out forwards;
-    
+
     @media only screen and (min-width: 992px) {
       width: 50px;
       height: 50px;
@@ -393,31 +395,35 @@
       border-radius: 4px;
       background: $white;
     }
+
     &::before {
-      width: 4px;
-      height: 15px;
-      
+      width: 3px;
+      height: 20px;
+
       @media only screen and (min-width: 992px) {
         width: 4px;
         height: 20px;
       }
     }
+
     &::after {
-      width: 15px;
-      height: 4px;
-      
+      width: 20px;
+      height: 3px;
+
       @media only screen and (min-width: 992px) {
         width: 20px;
         height: 4px;
       }
     }
   }
-  > svg {
+
+  >svg {
     width: 300px;
     height: 300px;
     position: absolute;
     z-index: 1;
     transform: scale(0);
+
     .shape {
       fill: none;
       stroke: none;
@@ -427,6 +433,7 @@
       transform-origin: 50% 20%;
     }
   }
+
   input {
     height: 100%;
     width: 100%;
@@ -435,9 +442,11 @@
     position: absolute;
     z-index: 5;
     opacity: 0;
+
     &:checked {
-      ~ svg {
+      ~svg {
         animation: pang-animation 1.2s ease-out forwards;
+
         .shape {
           @for $shape from 1 through 9 {
             &:nth-of-type(#{$shape}) {
@@ -446,10 +455,11 @@
           }
         }
       }
-      ~ .btn {
+
+      ~.btn {
         animation: plus-animation .5s ease-out forwards;
       }
-      
+
     }
   }
 }
@@ -459,63 +469,80 @@
     transform: scale(0);
     opacity: 0;
   }
+
   40% {
     transform: scale(1);
     opacity: 1;
   }
+
   100% {
     transform: scale(1.1);
     opacity: 0;
   }
 }
+
 @keyframes plus-animation {
   0% {
     transform: rotate(0) scale(1);
   }
+
   20% {
     transform: rotate(60deg) scale(.93);
   }
+
   55% {
     transform: rotate(35deg) scale(.97);
   }
+
   80% {
     transform: rotate(48deg) scale(.94);
   }
+
   100% {
     transform: rotate(45deg) scale(.95);
   }
 }
+
 @keyframes plus-animation-reverse {
   0% {
     transform: rotate(45deg) scale(.95);
   }
+
   20% {
     transform: rotate(-15deg);
   }
+
   55% {
     transform: rotate(10deg);
   }
+
   80% {
     transform: rotate(-3deg);
   }
+
   100% {
     transform: rotate(0) scale(1);
   }
 }
+
 @keyframes stretch-animation {
   0% {
-    transform: scale(1,1)
+    transform: scale(1, 1)
   }
+
   10% {
-    transform: scale(1.1,.9)
+    transform: scale(1.1, .9)
   }
+
   30% {
-    transform: scale(.9,1.1)
+    transform: scale(.9, 1.1)
   }
+
   50% {
-    transform: scale(1.05,.95)
+    transform: scale(1.05, .95)
   }
+
   100% {
-    transform: scale(1,1)
+    transform: scale(1, 1)
   }
 }

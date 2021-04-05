@@ -1,7 +1,7 @@
 .imagen_home {
-    background-image: url(../imagenes/home_img-02.png), url(/imagenes/footer_img-03.png) ;
+    background-image: url(../imagenes/home_img-02.png), url(../imagenes/footer_img-03.png) ;
     background-position: top, bottom;
-    background-size: min(100%);
+    background-size: max(100%);
     background-repeat: no-repeat;
     min-width: 100%;
 
@@ -10,4 +10,7 @@
 }
 html{
     scroll-behavior: smooth;
+}
+body {
+    // background-color: black;
 }

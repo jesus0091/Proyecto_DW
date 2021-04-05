@@ -1,7 +1,7 @@
 .imagen_home {
-  background-image: url(../imagenes/home_img-02.png), url(/imagenes/footer_img-03.png);
+  background-image: url(../imagenes/home_img-02.png), url(../imagenes/footer_img-03.png);
   background-position: top, bottom;
-  background-size: min(100%);
+  background-size: max(100%);
   background-repeat: no-repeat;
   min-width: 100%;
 }
@@ -49,6 +49,14 @@ header ul a {
 }
 header ul a:hover {
   color: #0e8dfd;
+}
+@media only screen and (max-width: 992px) {
+  header ul a .tag_nav {
+    padding: 2px 5px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+  }
 }
 header ul a .i_svg {
   background-color: rgba(245, 243, 244, 0.7);
@@ -434,8 +442,8 @@ header ul a .i_svg {
   background: white;
 }
 .wrapper .btn::before {
-  width: 4px;
-  height: 15px;
+  width: 3px;
+  height: 20px;
 }
 @media only screen and (min-width: 992px) {
   .wrapper .btn::before {
@@ -444,8 +452,8 @@ header ul a .i_svg {
   }
 }
 .wrapper .btn::after {
-  width: 15px;
-  height: 4px;
+  width: 20px;
+  height: 3px;
 }
 @media only screen and (min-width: 992px) {
   .wrapper .btn::after {
@@ -481,31 +489,31 @@ header ul a .i_svg {
   animation: pang-animation 1.2s ease-out forwards;
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(1) {
-  transform: translate(16px, 30%) rotate(40deg);
+  transform: translate(10px, 30%) rotate(40deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(2) {
-  transform: translate(-4px, 30%) rotate(80deg);
+  transform: translate(1px, 30%) rotate(80deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(3) {
-  transform: translate(22px, 30%) rotate(120deg);
+  transform: translate(-2px, 30%) rotate(120deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(4) {
-  transform: translate(-5px, 30%) rotate(160deg);
+  transform: translate(-1px, 30%) rotate(160deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(5) {
-  transform: translate(0px, 30%) rotate(200deg);
+  transform: translate(-2px, 30%) rotate(200deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(6) {
-  transform: translate(25px, 30%) rotate(240deg);
+  transform: translate(-8px, 30%) rotate(240deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(7) {
-  transform: translate(16px, 30%) rotate(280deg);
+  transform: translate(3px, 30%) rotate(280deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(8) {
-  transform: translate(25px, 30%) rotate(320deg);
+  transform: translate(-6px, 30%) rotate(320deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(9) {
-  transform: translate(13px, 30%) rotate(360deg);
+  transform: translate(9px, 30%) rotate(360deg);
 }
 .wrapper input:checked ~ .btn {
   animation: plus-animation 0.5s ease-out forwards;
@@ -893,7 +901,8 @@ a {
   }
 }
 
-.card_item:focus-within ~ .card_item, .card_item:hover ~ .card_item {
+.card_item:focus-within ~ .card_item,
+.card_item:hover ~ .card_item {
   transform: translateX(130px);
 }
 
@@ -1006,8 +1015,9 @@ a {
 }
 
 .card_item:hover {
-  background-image: url(/imagenes/bg-card-01.png);
+  background-image: url(../imagenes/bg-card-01.png);
   background-size: 100%;
+  background-blend-mode: #00060c;
   transition: 0.2s ease-out;
 }
 
@@ -1080,7 +1090,7 @@ a {
 /*------------------------------------- CONTACT ------------------------------------*/
 .contact_style {
   padding: 15px !important;
-  background: rgba(1, 61, 113, 0.8);
+  background: rgba(1, 61, 113, 0.9);
   backdrop-filter: blur(5px);
   padding: 15px;
   border-radius: 15px;
@@ -1096,42 +1106,73 @@ a {
   font-size: 30px;
   color: #013d71;
 }
-.contact_style .form_style .i_name {
-  letter-spacing: 0.5px;
-  font-weight: bold;
-  font-size: 16px;
-  font-size: 16px;
-  line-height: 1;
-  height: 32px;
-  margin: 15px 0 !important;
-  border-radius: 50px;
-  background: white !important;
-  border: none !important;
-}
-.contact_style .form_style .e_mail {
-  letter-spacing: 0.5px;
-  font-weight: bold;
-  font-size: 16px;
-  font-size: 16px;
-  line-height: 1;
-  height: 32px;
-  margin: 15px 0 !important;
-  border-radius: 50px;
-  background: white !important;
-  border: none !important;
-}
-.contact_style .form_style .text_area {
-  letter-spacing: 0.5px;
-  font-weight: bold;
-  line-height: 1.2;
-  padding: 5px;
-  resize: none;
+.contact_style .form_style .inp {
+  position: relative;
+  margin: auto;
   width: 100%;
-  height: 70px;
-  padding: 10px;
-  border-radius: 16px;
-  background: white !important;
-  border: none !important;
+  max-width: 280px;
+  overflow: hidden;
+}
+.contact_style .form_style .inp .label {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.contact_style .form_style .inp .focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.contact_style .form_style .inp input,
+.contact_style .form_style .inp textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 5px 12px 5px 12px;
+  margin-top: 20px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  background: none;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+  color: black;
+  transition: all 0.15s ease;
+  resize: none;
+}
+.contact_style .form_style .inp input:not(:placeholder-shown) + .label,
+.contact_style .form_style .inp textarea:not(:placeholder-shown) + .label {
+  color: rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, -20px, 0) scale(0.75);
+}
+.contact_style .form_style .inp input:focus,
+.contact_style .form_style .inp textarea:focus {
+  outline: none;
+  box-shadow: inset 0 -2px 0 #0e8dfd;
+}
+.contact_style .form_style .inp input:focus + .label,
+.contact_style .form_style .inp textarea:focus + .label {
+  color: #0e8dfd;
+  transform: translate3d(0, -20px, 0) scale(0.75);
+}
+.contact_style .form_style .inp input:focus + .focus-bg,
+.contact_style .form_style .inp textarea:focus + .focus-bg {
+  transform: scaleX(1);
+  transition: all 0.1s ease;
 }
 .contact_style .form_style .f_buttons {
   margin-top: 10px;
