@@ -5,18 +5,19 @@
   background-repeat: no-repeat;
   min-width: 100%;
 }
+@media only screen and (max-width: 576px) {
+  .imagen_home {
+    background: url(../imagenes/mobile-bg-01.png) repeat fixed 100%;
+  }
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 /*----------------------------- NAVBAR ---------------------------*/
-header {
-  padding: 15px 0;
-}
 header .nav_bar {
   margin: 0;
-  padding: 15px 0px;
 }
 header img {
   height: 40px;
@@ -90,6 +91,18 @@ header ul a .i_svg {
 }
 
 /*----------------------------- NAVBAR ---------------------------*/
+.navbar-scroll {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.6s;
+}
+
+.nav-dropdown-scroll {
+  background: #e7eaea;
+  box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
+}
+
 @media only screen and (min-width: 992px) {
   .s_about {
     min-height: 50vh;
@@ -489,31 +502,31 @@ header ul a .i_svg {
   animation: pang-animation 1.2s ease-out forwards;
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(1) {
-  transform: translate(10px, 30%) rotate(40deg);
+  transform: translate(15px, 30%) rotate(40deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(2) {
-  transform: translate(1px, 30%) rotate(80deg);
+  transform: translate(11px, 30%) rotate(80deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(3) {
-  transform: translate(-2px, 30%) rotate(120deg);
+  transform: translate(-21px, 30%) rotate(120deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(4) {
-  transform: translate(-1px, 30%) rotate(160deg);
+  transform: translate(10px, 30%) rotate(160deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(5) {
-  transform: translate(-2px, 30%) rotate(200deg);
+  transform: translate(-12px, 30%) rotate(200deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(6) {
-  transform: translate(-8px, 30%) rotate(240deg);
+  transform: translate(-24px, 30%) rotate(240deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(7) {
-  transform: translate(3px, 30%) rotate(280deg);
+  transform: translate(7px, 30%) rotate(280deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(8) {
-  transform: translate(-6px, 30%) rotate(320deg);
+  transform: translate(24px, 30%) rotate(320deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(9) {
-  transform: translate(9px, 30%) rotate(360deg);
+  transform: translate(7px, 30%) rotate(360deg);
 }
 .wrapper input:checked ~ .btn {
   animation: plus-animation 0.5s ease-out forwards;
@@ -584,15 +597,54 @@ header ul a .i_svg {
     transform: scale(1, 1);
   }
 }
+.skills_tags {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.skills_tags .img_skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills_tags p {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 5px;
+  line-height: 1.2;
+  color: #013d71;
+}
+@media only screen and (min-width: 768px) {
+  .skills_tags p {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+
+.skills_apt {
+  display: inline-block;
+  line-height: 1.25;
+  padding: 5px 10px;
+  margin: 2px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  color: #013d71;
+  letter-spacing: 0.5px;
+}
+
+#pills-skills h3 {
+  color: #013d71;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}
+
 a {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 992px) {
-  .works {
-    min-height: 100vh;
-  }
-}
 .works .title_works {
   display: flex;
   justify-content: center;
@@ -659,6 +711,9 @@ a {
     font-size: 30px;
   }
 }
+.works .nav a span {
+  color: gray;
+}
 .works .nav a:hover {
   border: none;
   margin: 0;
@@ -668,23 +723,29 @@ a {
   border: none;
   margin: 0;
 }
+.works .nav .active .w_card {
+  background: #012f58;
+}
+.works .nav .active span {
+  color: white;
+}
 .works .w_card {
   border-radius: 15px;
-  background: rgba(1, 47, 88, 0.9);
+  background: #013d71;
   backdrop-filter: blur(5px);
   position: relative;
   height: 100%;
-  min-height: 200px;
+  min-height: 250px;
 }
 @media only screen and (min-width: 768px) {
   .works .w_card {
-    border-radius: 5px 20px 20px 20px;
+    border-radius: 20px 20px 5px 20px;
     min-height: 250px;
   }
 }
 @media only screen and (min-width: 992px) {
   .works .w_card {
-    border-radius: 35px 35px 35px 5px;
+    border-radius: 35px 35px 5px 35px;
     min-height: 320px;
   }
 }
@@ -718,8 +779,9 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .works .w_card .card_img {
-    height: 50%;
+    height: 40%;
     margin-bottom: 5px;
+    margin-top: 10px;
   }
   .works .w_card .card_img img {
     max-width: 10rem;
@@ -728,8 +790,11 @@ a {
   }
 }
 @media only screen and (min-width: 992px) {
+  .works .w_card .card_img {
+    height: 50%;
+    padding: 0;
+  }
   .works .w_card .card_img img {
-    margin-top: 15px;
     max-width: 10rem;
     max-width: 10rem;
     border: 8px solid #013767;
@@ -737,7 +802,7 @@ a {
 }
 .works .w_card .card_header {
   flex-direction: column;
-  height: 50%;
+  height: 40%;
 }
 .works .w_card .card_header h2 {
   font-size: 14px;
@@ -762,7 +827,7 @@ a {
 }
 @media only screen and (min-width: 576px) {
   .works .w_card .card_header {
-    height: 40%;
+    height: 30%;
   }
   .works .w_card .card_header h2 {
     font-size: 16px;
@@ -775,7 +840,7 @@ a {
 }
 @media only screen and (min-width: 768px) {
   .works .w_card .card_header {
-    height: 50%;
+    height: 40%;
   }
   .works .w_card .card_header h2 {
     font-size: 16px;
@@ -832,8 +897,9 @@ a {
 }
 
 .card_places {
-  border-radius: 5px;
-  background-color: rgba(245, 243, 244, 0.932);
+  border-radius: 15px;
+  background-color: rgba(245, 243, 244, 0.6);
+  padding: 20px 5px;
 }
 @media only screen and (min-width: 992px) {
   .card_places {
@@ -877,9 +943,9 @@ a {
 
 .card_item {
   cursor: pointer;
-  height: 280px;
-  width: 220px;
-  min-width: 220px;
+  height: 250px;
+  width: 200px;
+  min-width: 200px;
   padding: 1.5rem;
   border-radius: 16px;
   display: flex;
@@ -890,7 +956,7 @@ a {
   clear: both;
   position: relative;
   background: #013d71;
-  border-radius: 35px 35px 10px 35px !important;
+  border-radius: 15px !important;
   box-shadow: 3px 3px 6px rgba(1, 33, 61, 0.6), -15px -1px 6px rgba(0, 0, 0, 0.35), -10px -1px 6px rgba(0, 0, 0, 0.35);
 }
 @media only screen and (min-width: 992px) {
@@ -898,12 +964,19 @@ a {
     height: 280px;
     width: 240px;
     min-width: 240px;
+    border-radius: 35px 35px 10px 35px !important;
   }
 }
 
 .card_item:focus-within ~ .card_item,
 .card_item:hover ~ .card_item {
-  transform: translateX(130px);
+  transform: translateX(75px);
+}
+@media only screen and (min-width: 768px) {
+  .card_item:focus-within ~ .card_item,
+.card_item:hover ~ .card_item {
+    transform: translateX(130px);
+  }
 }
 
 .card_item:hover {
@@ -911,15 +984,27 @@ a {
 }
 
 .card_item:not(:first-child) {
-  margin-left: -130px;
+  margin-left: -80px;
+}
+@media only screen and (min-width: 768px) {
+  .card_item:not(:first-child) {
+    margin-left: -130px;
+  }
 }
 
 .card-header {
   font-family: "Roboto", sans-serif;
   margin-bottom: auto;
-  height: 50%;
-  border-radius: 15px 15px 5px 15px !important;
+  height: 60%;
+  border-radius: 8px !important;
   background-color: rgba(245, 243, 244, 0.932) !important;
+  padding: 0.5rem 0.75rem;
+}
+@media only screen and (min-width: 768px) {
+  .card-header {
+    height: 50%;
+    border-radius: 15px 15px 5px 15px !important;
+  }
 }
 
 .card-header p {
@@ -1022,16 +1107,16 @@ a {
 }
 
 .pensa_content {
-  background-color: rgba(245, 243, 244, 0.9);
+  background-color: rgba(245, 243, 244, 0.6);
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px 20px;
 }
-
-@media only screen and (min-width: 992px) {
-  .s_galery {
-    min-height: 100vh;
+@media only screen and (min-width: 768px) {
+  .pensa_content {
+    padding: 20px 30px;
   }
 }
+
 .s_galery .title_galery {
   display: flex;
   justify-content: flex-end;

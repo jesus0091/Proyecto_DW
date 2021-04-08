@@ -6,7 +6,7 @@ a {
 
 .works {
     @media only screen and (min-width: 992px) {
-        min-height: 100vh;
+        // min-height: 100vh;
     }
 
     .title_works {
@@ -79,11 +79,14 @@ a {
                 font-size: 30px;
             }
         }
-
     }
 
     .nav {
         a {
+            span {
+                color: gray;
+            }
+
             &:hover {
                 border: none;
                 margin: 0;
@@ -94,25 +97,34 @@ a {
             background: none;
             border: none;
             margin: 0;
+
+            .w_card {
+                background: darken($dodger-blue, 35%);
+            }
+
+            span {
+                color: $white;
+            }
+
         }
 
     }
 
     .w_card {
         border-radius: 15px;
-        background: transparentize(darken($dodger-blue, 35%), 0.1);
+        background: transparentize(darken($dodger-blue, 30%), 0);
         backdrop-filter: blur(5px);
         position: relative;
         height: 100%;
-        min-height: 200px;
+        min-height: 250px;
 
         @media only screen and (min-width: 768px) {
-            border-radius: 5px 20px 20px 20px;
+            border-radius: 20px 20px 5px 20px;
             min-height: 250px;
         }
 
         @media only screen and (min-width: 992px) {
-            border-radius: 35px 35px 35px 5px;
+            border-radius: 35px 35px 5px 35px;
             min-height: 320px;
         }
 
@@ -145,8 +157,9 @@ a {
             }
 
             @media only screen and (min-width: 768px) {
-                height: 50%;
+                height: 40%;
                 margin-bottom: 5px;
+                margin-top: 10px;
 
                 img {
                     max-width: 10rem;
@@ -156,10 +169,10 @@ a {
             }
 
             @media only screen and (min-width: 992px) {
-                // height: 60%;
+                height: 50%;
+                padding: 0;
 
                 img {
-                    margin-top: 15px;
                     max-width: 10rem;
                     max-width: 10rem;
                     border: 8px solid darken($dodger-blue, 32%);
@@ -169,7 +182,7 @@ a {
 
         .card_header {
             flex-direction: column;
-            height: 50%;
+            height: 40%;
 
             h2 {
                 font-size: 14px;
@@ -197,7 +210,7 @@ a {
             }
 
             @media only screen and (min-width: 576px) {
-                height: 40%;
+                height: 30%;
 
                 h2 {
                     font-size: 16px;
@@ -211,7 +224,7 @@ a {
             }
 
             @media only screen and (min-width: 768px) {
-                height: 50%;
+                height: 40%;
 
                 h2 {
                     font-size: 16px;
@@ -283,8 +296,9 @@ a {
 }
 
 .card_places {
-    border-radius: 5px;
-    background-color: rgba(245, 243, 244, 0.932);
+    border-radius: 15px;
+    background-color: rgba(245, 243, 244, 0.6);
+    padding: 20px 5px;
 
     @media only screen and (min-width: 992px) {
         border-radius: 20px;
@@ -331,9 +345,9 @@ a {
 
 .card_item {
     cursor: pointer;
-    height: 280px;
-    width: 220px;
-    min-width: 220px;
+    height: 250px;
+    width: 200px;
+    min-width: 200px;
     padding: 1.5rem;
     border-radius: 16px;
     display: flex;
@@ -344,7 +358,7 @@ a {
     clear: both;
     position: relative;
     background: darken(rgba(14, 141, 253), 30%);
-    border-radius: 35px 35px 10px 35px !important;
+    border-radius: 15px !important;
     box-shadow: 3px 3px 6px rgb(1, 33, 61, 0.6),
         -15px -1px 6px rgba(0, 0, 0, 0.35),
         -10px -1px 6px rgba(0, 0, 0, 0.35);
@@ -353,12 +367,17 @@ a {
         height: 280px;
         width: 240px;
         min-width: 240px;
+        border-radius: 35px 35px 10px 35px !important;
     }
 }
 
 .card_item:focus-within~.card_item,
 .card_item:hover~.card_item {
-    transform: translateX(130px);
+    transform: translateX(75px);
+
+    @media only screen and (min-width: 768px) {
+        transform: translateX(130px);
+    }
 }
 
 .card_item:hover {
@@ -366,15 +385,25 @@ a {
 }
 
 .card_item:not(:first-child) {
-    margin-left: -130px;
+    margin-left: -80px;
+
+    @media only screen and (min-width: 768px) {
+        margin-left: -130px;
+    }
 }
 
 .card-header {
     font-family: 'Roboto', sans-serif;
     margin-bottom: auto;
-    height: 50%;
-    border-radius: 15px 15px 5px 15px !important;
+    height: 60%;
+    border-radius: 8px !important;
     background-color: rgba(245, 243, 244, 0.932) !important;
+    padding: 0.5rem 0.75rem;
+
+    @media only screen and (min-width: 768px) {
+        height: 50%;
+        border-radius: 15px 15px 5px 15px !important;
+    }
 
 
 }
@@ -478,13 +507,17 @@ a {
 .card_item:hover {
     background-image: url(../imagenes/bg-card-01.png);
     background-size: 100%;
-    // -webkit-background-size: cover;
     background-blend-mode: darken($dodger-blue, 50%);
     transition: 0.2s ease-out;
 }
 
 .pensa_content {
-    background-color: $white-smoke;
+    background-color: rgba(245, 243, 244, 0.6);
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px 20px;
+
+    @media only screen and (min-width: 768px) {
+        padding: 20px 30px;
+
+    }
 }

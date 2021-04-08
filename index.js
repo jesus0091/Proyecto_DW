@@ -1,12 +1,23 @@
-/*             BOTON DE MENU DE NAVEGACION             */ 
-
-
+/*--------------------------------- SCROLL NAVBAR ------------------------------------*/ 
+$(function(){
+	var navbar = $('.scrolling-navbar');
+	
+	$(window).scroll(function(){
+		if($(window).scrollTop() <= 40){
+			navbar.removeClass('navbar-scroll');
+		} else {
+			navbar.addClass('navbar-scroll');
+		}
+	});
+});
+/*--------------------------------- SCROLL NAVBAR ------------------------------------*/ 
+/*----------------------------------- BTN NAVBAR -------------------------------------*/
 ///Initiation Variables
 var icon_1 = document.getElementById("b1");
 var topLine_1 = document.getElementById("top-line-1");
 var middleLine_1 = document.getElementById("middle-line-1");
 var bottomLine_1 = document.getElementById("bottom-line-1");
-var state_1 = "menu";  // can be "menu" or "arrow"
+var state_1 = "menu";
 var topLineY_1;
 var middleLineY_1;
 var bottomLineY_1;
@@ -161,3 +172,4 @@ icon_1.addEventListener( "click", ()=> {
 		arrowAppearComplete_1 = false;
   }
 });
+/*----------------------------------- BTN NAVBAR -------------------------------------*/
