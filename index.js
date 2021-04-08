@@ -10,6 +10,9 @@ $(function(){
 		}
 	});
 });
+$(document).on('click', function () {
+    $('.navbar-collapse').collapse('hide');
+});
 /*--------------------------------- SCROLL NAVBAR ------------------------------------*/ 
 /*----------------------------------- BTN NAVBAR -------------------------------------*/
 ///Initiation Variables
