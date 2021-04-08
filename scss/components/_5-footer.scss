@@ -1,3 +1,4 @@
+@import 'variables.scss';
 /*------------------------------------- FOOTER ------------------------------------*/ 
 footer{
 
@@ -64,7 +65,7 @@ footer{
         font-size: 16px;
         text-align: center;
         margin: 20px 0;
-        color: black;
+        color: $white;
     }
 }
 /*------------------------------------- FOOTER ------------------------------------*/
