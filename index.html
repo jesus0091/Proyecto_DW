@@ -441,182 +441,264 @@
     </section>
     <!-------------------------------------------------------------------------------------------------------->
     <!--------------------------------------------- Section Works -------------------------------------------->
-    <section class="works py-5" id="works">
+    <section class="container works py-5" id="works">
         <div class="container title_works">
             <img class="icon_works" src="imagenes/SVG/i_works.svg" alt="">
             <h2 class="text_works">trabajos</h2>
         </div>
-        <div class="container">
-            <div class="row mx-0">
-                <div class="border-0 p-0 col-12 nav nav-tabs" id="nav-tab" role="tablist">
-                    <!------------------------------------- SLOGAN 1 ---------------------------------------->
+        <div class="row mx-0 ivc ">
+            <div class="col-12 col-md-3 p-2 p-md-2 mb-3 card_ivc">
+                <div class="row mx-0">
                     <div
-                        class="px-3 px-md-0 order-1 order-md-1 col-6 col-md-3 d-flex flex-column justify-content-center px-0 py-3 slogan">
-                        <p class="p_one m-0 pr-md-3 text-center text-md-right">
-                            Cuando haces lo que te gusta, deja de ser un trabajo y se convierte en una
-                            <span class="p_three">pasión.</span>
-                        </p>
+                        class="px-0 p-sm-2 pb-md-2 col-2 col-md-12 d-flex align-items-center align-items-md-start align-items-md-center justify-content-center">
+                        <img class="w-100" src="imagenes/ivc/logo_ivc.jpg"
+                            alt="Logo - Instituto de Vivienda de Buenos Aires (IVC)">
                     </div>
-                    <!----------------------------------- BTN IVC ------------------------------------------>
-                    <a class=" order-3 order-md-2 border-0 m-0 bg-0 col-6 col-md-3 pl-0 pr-1 p-md-2 p-md-2 nav-link active"
-                        id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-                        aria-selected="true">
-                        <div class="row mx-0 py-1 w_card card_ivc">
-                            <div class="col-12 col-md-12 d-flex align-items-center justify-content-center card_img">
-                                <img class="w-100" src="imagenes/ivc/logo_ivc.jpg"
-                                    alt="Logo - Instituto de Vivienda de Buenos Aires (IVC)">
-                            </div>
-                            <div class="col-12 col-md-12 d-flex flex-column justify-content-start card_header ">
-                                <h2 class="text-center">Ingeniero Geodesta</h2>
-                                <p class="text-center">
-                                    <text-muted>en </text-muted> Instituto de Vivienda de la Ciudad Autónoma de Buenos
-                                    Aires
-                                </p>
-                            </div>
-                            <span class="col-12 d-flex justify-content-center align-items-center"><i class="fas fa-angle-down"></i></span>
-                        </div>
-                    </a>
-                    <!------------------------------- BTN PENSA_TRAZOS ------------------------------------->
-                    <a class="order-4 order-md-3 border-0 m-0 bg-0 col-6 col-md-3 pl-1 pr-0 p-md-2 nav-link"
-                        id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                        aria-controls="nav-profile" aria-selected="false">
-                        <div class="row mx-0 py-1 w_card pensa_trazos">
-                            <div class="col-12 col-md-12 d-flex align-items-center justify-content-center card_img">
-                                <img class="w-100" src="imagenes/pensa_trazos/logo_pensa_trazos.png"
-                                    alt="Logo - Pensa_trazos">
-                            </div>
-                            <div class="col-12 col-md-12 d-flex flex-column justify-content-start card_header">
-                                <h2 class="text-center">Creador e Ilustrador</h2>
-                                <p class="text-center">
-                                    <text-muted> en</text-muted> PENSA_TRAZOS
-                                </p>
-                            </div>
-                            <span class="col-12 d-flex justify-content-center align-items-center"><i class="fas fa-angle-down"></i></span>
-                        </div>
-                    </a>
-                    <!------------------------------------- SLOGAN 2 --------------------------------------->
                     <div
-                        class="px-3 px-md-0 order-2 order-md-4 col-6 ml-auto col-md-3 d-flex flex-column justify-content-center py-3 slogan">
-                        <p class="p_one m-0 pl-md-3 text-center text-md-left">
-                            Dibujar también es un lenguaje, pero de comunicación
-                            <span class="p_three">visual!</span>
+                        class="px-2 px-md-2 py-md-2 col-8 col-md-12 d-flex flex-column justify-content-center card_ivc_header ">
+                        <h2 class="text-md-center">Ingeniero Geodesta</h2>
+                        <p class="text-left text-md-center">
+                            <text-muted>en </text-muted> Instituto de Vivienda de la Ciudad Autónoma de Buenos Aires
                         </p>
                     </div>
                 </div>
-                <div class="col-12 tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="row">
-                            <div class="col-12 card-body align-items-center card_places">
-                                <h2 class="d-block places_title">
-                                    algunos proyectos de los que formo parte
+            </div>
+            <div class="col-12 col-md-9 px-0 px-md-2">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column pb-0 pb-md-2 slogan_ivc">
+                        <p class="text-center text-md-left">
+                            Algunos de los proyectos que formo parte
+                        </p>
+                    </div>
+                    <div class="col-12 accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Barrio Rodrigo Bueno <text-muted class="d-block d-md-inline">(Villa Rodrigo Bueno)</text-muted>
+                                    </button>
                                 </h2>
-                                <div class="card-list justify-content-md-center">
-                                    <article class="row card_item">
-                                        <header class="card-header">
-                                            <p>Barrio</p>
-                                            <h2>RODRIGO BUENO</h2>
-                                            <p>(Villa Rodrigo Bueno)</p>
-                                        </header>
-                                        <div class="bar">
-                                            <div class="emptybar"></div>
-                                            <div class="filledbar"></div>
+                            </div>
+        
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>El barrio Rodrigo Bueno se encuentra ubicado
+                                                en la Comuna 1, en
+                                                la Av. España al 1800. En el viven 2.665
+                                                personas, 996 familias,
+                                                y cuenta con un total de 563 viviendas, de
+                                                acuerdo con el censo
+                                                realizado en 2016 por el IVC.
+                                                <br><br>Otros datos importantes:
+                                                <ul>
+                                                    <li>Al 81% de las viviendas se accede sobre un
+                                                        pasillo.</li>
+                                                    <li>El 99,2% de las viviendas no tienen medidor
+                                                        de luz eléctrica.</li>
+                                                    <li>El 88% de las viviendas accede al servicio
+                                                        de agua de la red
+                                                        pública (las conexiones son informales).</li>
+                                                    <li>El 95,9% de las viviendas tienen gas por
+                                                        garrafa.</li>
+                                                    <li>El 57% de las viviendas tienen pozo ciego.</li>
+                                                    <li>El 38% de las cloacas desagotan en el Río de
+                                                        la Plata.</li>
+                                                </ul>
+        
+                                                El 23 de marzo de 2017 se sancionó la Ley
+                                                5.798 que dispone la
+                                                reurbanización, zonificación e integración
+                                                social, cultural y
+                                                urbana del barrio.
+                                                El proyecto de integración socio-urbana
+                                                contempla la
+                                                construcción de viviendas nuevas, la
+                                                dotación de infraestructura
+                                                básica, espacios de recreación y culturales,
+                                                como así también la
+                                                apertura de calles, la regularización
+                                                dominial, el mejoramiento
+                                                de las viviendas existentes, la construcción
+                                                de equipamiento
+                                                urbano y la intervención en espacios
+                                                públicos. <br><br>
+                                                Actualmente se entregaron 612 viviendas
+                                                nuevas y se está
+                                                trabajando en la infraestructura del barrio
+                                                para garantizar el
+                                                acceso a todos los servicios públicos..</p>
                                         </div>
-                                        <div class="tags mt-0 m-md-2">
-                                            <a href="#"><i class="fas fa-info"></i></a>
-                                            <a href="#"><i class="fas fa-map-marked-alt"></i></a>
+                                        <div class="col-12">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3099.183011682972!2d-58.353394653281725!3d-34.61756182312458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334dcd2ea2037%3A0x78107e3c40bba731!2sVilla%20Rodrigo%20Bueno!5e0!3m2!1ses!2sar!4v1618072129609!5m2!1ses!2sar"
+                                                width="100%" height="300px" style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
                                         </div>
-                                    </article>
-                                    <article class="row card_item">
-                                        <header class="card-header">
-                                            <p>Barrio</p>
-                                            <h2>PLAYÓN CHACARITA</h2>
-                                            <p>(Villa Fraga)</p>
-                                        </header>
-                                        <div class="bar">
-                                            <div class="emptybar"></div>
-                                            <div class="filledbar"></div>
-                                        </div>
-                                        <div class="tags mt-0 m-md-2">
-                                            <a href="#"><i class="fas fa-info"></i></a>
-                                            <a href="#"><i class="fas fa-map-marked-alt"></i></a>
-                                        </div>
-                                    </article>
-                                    <article class="row card_item">
-                                        <header class="card-header">
-                                            <p>Barrio</p>
-                                            <h2>PAPA FRANCISCO</h2>
-                                            <p>(Villa 20)</p>
-                                        </header>
-                                        <div class="bar">
-                                            <div class="emptybar"></div>
-                                            <div class="filledbar"></div>
-                                        </div>
-                                        <div class="tags mt-0 m-md-2">
-                                            <a href="#"><i class="fas fa-info"></i></a>
-                                            <a href="#"><i class="fas fa-map-marked-alt"></i></a>
-                                        </div>
-                                    </article>
-                                    <article class="row card_item">
-                                        <header class="card-header">
-                                            <p>Barrio</p>
-                                            <h2>PADRE RODOLFO RICCIARDELLI</h2>
-                                            <p>(Villa 1-11-14)</p>
-                                        </header>
-                                        <div class="bar">
-                                            <div class="emptybar"></div>
-                                            <div class="filledbar"></div>
-                                        </div>
-                                        <div class="tags mt-0 m-md-2">
-                                            <a href="#"><i class="fas fa-info"></i></a>
-                                            <a href="#"><i class="fas fa-map-marked-alt"></i></a>
-                                        </div>
-                                    </article>
-                                    <article class="row card_item">
-                                        <header class="card-header">
-                                            <p>Barrio</p>
-                                            <h2>CIUDAD OCULTA</h2>
-                                            <p>(Villa 15)</p>
-                                        </header>
-                                        <div class="bar">
-                                            <div class="emptybar"></div>
-                                            <div class="filledbar"></div>
-                                        </div>
-                                        <div class="tags mt-0 m-md-2">
-                                            <a href="#"><i class="fas fa-info"></i></a>
-                                            <a href="#"><i class="fas fa-map-marked-alt"></i></a>
-                                        </div>
-                                    </article>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="row">
-                            <div class="col-12 pensa_content">
-                                <div class="row">
-                                    <div class="pensa_card col-6 col-md-4 my-1 my-md-2 px-2 px-2">
-                                        <img class="w-100" src="imagenes/pensa_trazos/Imagenes-01.png"
-                                            alt="Pensa_trazos Imagen 01 - Nathan McCallum">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Barrio Playón de Chacarita <text-muted class="d-block d-md-inline">(Villa Fraga)</text-muted>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>
+                                                El barrio Playón de Chacarita se encuentra ubicado entre las
+                                                calles Fraga, Teodoro García, Palpa, Céspedes y las vías del
+                                                Ferrocarril Urquiza, en la Comuna 15. Cuenta con 9 manzanas,
+                                                donde viven 2.764 personas -1.042 familias- en 513 viviendas.<br><br>
+                                                Según el censo realizado por el IVC en 2016, en el barrio:
+                                                <ul>
+                                                    <li>El 67% de las viviendas están sobre un pasillo.</li>
+                                                    <li>El 93% no tiene acceso a la red de gas.</li>
+                                                    <li>Casi el 90% de las viviendas disponen de acceso al agua dentro
+                                                        de sus viviendas y por medio de la red pública.</li>
+                                                    <li>El 92,6% tiene acceso a la red pública cloacal.</li>
+                                                    <li>El 90,4% tiene acceso a la red eléctrica sin medidor.</li>
+                                                </ul>
+                                                El proyecto de integración socio-urbana, que hoy lleva adelante
+                                                el IVC, fue aprobado por la Ley 5.799. La misma fue sancionada
+                                                por la Legislatura de la Ciudad de Buenos Aires en marzo de
+                                                2017. El objeto de la Ley es la
+                                                reurbanización, zonificación e integración social, cultural,
+                                                ambiental y urbana. <br><br>
+                                                En 2018, comenzó la construcción de las 678 viviendas nuevas
+                                                para los vecinos y vecinas del barrio en el predio aledaño que
+                                                pertenecía al Ferrocarril Urquiza.
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6569.361967710236!2d-58.455374923122264!3d-34.58693781167866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5e28ef51e7b%3A0x6bdf221ac032d4c5!2sBarrio%20Play%C3%B3n%20Chacarita.%20Instituto%20de%20Vivienda!5e0!3m2!1ses!2sar!4v1618073287948!5m2!1ses!2sar"
+                                                width="100%" height="300px" style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
                                     </div>
-                                    <div class="pensa_card col-6 col-md-4 my-1 my-md-2 px-2 px-2">
-                                        <img class="w-100" src="imagenes/pensa_trazos/Imagenes-02.png"
-                                            alt="Pensa_trazos Imagen 02 - Thomb Raider (M.Molina)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Barrio Papa Francisco <text-muted class="d-block d-md-inline">(Villa 20)</text-muted>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>Barrio 20 se encuentra ubicado en la Comuna 8 y está delimitado por Avenida
+                                                Escalada,
+                                                Avenida General Fernández de la Cruz, Avenida Larrazábal y José Battle y
+                                                Ordóñez.
+                                                Según el censo realizado por el Instituto de Vivienda de la Ciudad (IVC) en
+                                                2016,
+                                                barrio 20 ocupa 48 hectáreas, cuenta con 4.581 viviendas y habitan allí 27.990
+                                                personas, de un total de 9.116 familias.
+                                                Otros datos importantes que surgieron del censo:
+                                                <ul>
+                                                    <li>Al 55% de las viviendas se accede sobre un pasillo.</li>
+                                                    <li>El 45% de las viviendas tienen un estado de construcción regular o malo.
+                                                    </li>
+                                                    <li>El 13% está conectado formalmente a la red de eléctrica.</li>
+                                                    <li>El 95% accede a la red de agua potable de manera informal.</li>
+                                                </ul>
+                                                El proyecto de ley para la integración social y urbana del barrio fue aprobado
+                                                en
+                                                2016 por la Legislatura de la Ciudad y fue trabajado participativamente con los
+                                                vecinos y vecinas. El mismo contempla intervenciones en las viviendas existentes
+                                                y
+                                                más de 1.600 nuevas viviendas en el barrio Papa Francisco, a donde ya se mudaron
+                                                más
+                                                de 500 familias.
+                                                Periódicamente, se realizan en el barrio mesas de gestión participativa con los
+                                                vecinos, vecinas y representantes barriales para trabajar en conjunto cada paso
+                                                del
+                                                proceso.
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.1335324318607!2d-58.46564288417308!3d-34.67657916886519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc93c58ce7bcb%3A0x1d390247452bd2c!2sPapa%20Francisco!5e0!3m2!1ses!2sar!4v1618077898058!5m2!1ses!2sar"
+                                                width="100%" height="300px" style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
                                     </div>
-                                    <div class="pensa_card col-6 col-md-4 my-1 my-md-2 px-2 px-2">
-                                        <img class="w-100" src="imagenes/pensa_trazos/Imagenes-03.png"
-                                            alt="Pensa_trazos Imagen 03 - Fran Alvarado, Mr. Gay España">
-                                    </div>
-                                    <div class="pensa_card col-6 col-md-4 my-1 my-md-2 px-2 px-2">
-                                        <img class="w-100" src="imagenes/pensa_trazos/Imagenes-04.png"
-                                            alt="Pensa_trazos Imagen 04 - Andres Baró">
-                                    </div>
-                                    <div class="pensa_card col-6 col-md-4 my-1 my-md-2 px-2 px-2">
-                                        <img class="w-100" src="imagenes/pensa_trazos/Imagenes-05.png"
-                                            alt="Pensa_trazos Imagen 05 - Andres Baró">
-                                    </div>
-                                    <div class="pensa_card col-6 col-md-4 my-1 my-md-2 px-2 px-2">
-                                        <img class="w-100" src="imagenes/pensa_trazos/Imagenes-06.png"
-                                            alt="Pensa_trazos Imagen 06 - Lionel Messi">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Barrio Padre Rodolfo Ricciardelli <text-muted class="d-block d-md-inline">(Villa 1.11.14)</text-muted>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p>El barrio Padre Rodolfo Ricciardelli se ubica en el Bajo Flores, en la Comuna 7.
+                                                En las zonas aledañas se encuentran los conjuntos urbanos Bonorino I, Bonorino
+                                                II, Bonorino III, Rivadavia I, Rivadavia II, Conjunto 2M, Conjunto 2N, Illia I e
+                                                Illia II. <br><br>
+                                                El Proyecto de Integración Socio-Urbana comprende dos ejes de trabajo:
+                                                <ul>
+                                                    <li>La construcción y ejecución de un Proyecto Integral de Reurbanización en
+                                                        la
+                                                        Villa 1-11-14.</li>
+                                                    <li>El mejoramiento habitacional y regularización dominial de los conjuntos
+                                                        cercanos.</li>
+                                                </ul>
+        
+        
+                                                Estos ejes son abordados a través de estrategias participativas con las vecinas,
+                                                vecinos y la multiplicidad de actores presentes en el territorio.
+                                                En 2018, el Instituto de Vivienda realizó el censo de las familias y llevó a
+                                                cabo asambleas junto a las vecinas y vecinos, así como campañas de difusión y
+                                                acompañamiento.
+                                                El censo arrojó que en el barrio viven 40.059 personas, un total de 12.852
+                                                familias, en 4.907 viviendas. <br><br>
+                                                Otros datos importantes que surgieron del censo:
+                                                <ul>
+                                                    <li>Al 64% de las viviendas se accede sobre pasillo.</li>
+                                                    <li>El 97% de las viviendas están conectadas a la red eléctrica sin medidor.
+                                                    </li>
+                                                    <li>El 98% de las viviendas desagotan en la red cloacal con conexiones
+                                                        informales.
+                                                        Hay más de 2 familias por vivienda habitada.</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                        <div class="col-12">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.683212444412!2d-58.4496216561079!3d-34.65038913523775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbc0a335a91b%3A0x1b68d88ec237b10f!2sVilla%201-11-14%2C%20C1437%20CABA!5e0!3m2!1ses!2sar!4v1618080508251!5m2!1ses!2sar"
+                                                width="100%" height="300" style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -624,6 +706,8 @@
                     </div>
                 </div>
             </div>
+            
+            
         </div>
     </section>
     <!---------------------------------------------- GALERY -------------------------------------------------->
@@ -634,55 +718,49 @@
         </div>
 
         <nav class="px-0 col-12 border-0">
-            <div class="nav nav-tabs navigation border-0" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs navigation border-0" id="nav_tab" role="tablist">
 
-                <a class="nav-link border-0 mb-0 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                <a class="nav-link border-0 mb-0 active" id="nav-home-tab" data-toggle="tab" href="#nav-rb" role="tab"
                     aria-controls="nav-home" aria-selected="true"><img src="imagenes/SVG/i_foto.svg" alt="icono fotos">
                     Rodrigo Bueno</a>
 
-                <a class="nav-link border-0 mb-0" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                <a class="nav-link border-0 mb-0" id="nav-profile-tab" data-toggle="tab" href="#nav-fr" role="tab"
                     aria-controls="nav-profile" aria-selected="false"><img src="imagenes/SVG/i_foto.svg"
                         alt="icono fotos"> Playón Chacarita</a>
 
-                <a class="nav-link border-0 mb-0" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                <a class="nav-link border-0 mb-0" id="nav-contact-tab" data-toggle="tab" href="#nav-bpf" role="tab"
                     aria-controls="nav-contact" aria-selected="false"><img src="imagenes/SVG/i_foto.svg"
                         alt="icono fotos"> Papa Francisco</a>
             </div>
         </nav>
-        <div class="tab-content g_content border-0" id="nav-tabContent">
-            <div class=" border-0 py-4 px-3 col-12 tab-pane fade show active" id="nav-home" role="tabpanel"
+        <div class="tab-content g_content border-0" id="nav_tabContent">
+            <div class=" border-0 py-3 px-3 col-12 tab-pane fade show active" id="nav-rb" role="tabpanel"
                 aria-labelledby="nav-home-tab">
                 <div class="row mx-0">
-                    <div class="g_pic col-md-6">
-                        <img class="" src="imagenes/ivc/BRB/BRB_IMG-01.jpg" alt="">
+                    <div class="g_pic col-md-8 my-md-3">
+                        <img class="" src="imagenes/ivc/BRB/imagen-01.png" alt="Barrio Rodrigo Bueno - Antes">
                     </div>
-                    <div class="g_pic col-md-6">
-                        <img class="" src="imagenes/ivc/BRB/BRB_IMG-02.jpg" alt="">
+                    <div class="g_pic col-md-4 my-md-3">
+                        <img class="" src="imagenes/ivc/BRB/imagen-02.png" alt="Barrio Rodrigo Bueno">
                     </div>
-                    <div class="g_pic col-md-3">
-                        <img class="" src="" alt="">
+                    <div class="g_pic col-md-4 my-md-3">
+                        <img class="" src="imagenes/ivc/BRB/imagen-03.png" alt="Barrio Rodrigo Bueno">
                     </div>
-                    <div class="g_pic col-md-4">
-                        <img class="" src="" alt="">
+                    <div class="g_pic col-md-8 my-md-3">
+                        <img class="" src="imagenes/ivc/BRB/imagen-04.png" alt="Barrio Rodrigo Bueno - Proyecto">
                     </div>
-                    <div class="g_pic col-md-4">
-                        <img class="" src="" alt="">
+                    <div class="g_pic col-md-8 my-md-3">
+                        <img class="" src="imagenes/ivc/BRB/imagen-05.png" alt="Barrio Rodrigo Bueno">
                     </div>
-                    <div class="g_pic col-md-4">
-                        <img class="" src="" alt="">
-                    </div>
-                    <div class="g_pic col-md-4">
-                        <img class="" src="" alt="">
-                    </div>
-                    <div class="g_pic col-md-4">
-                        <img class="" src="" alt="">
+                    <div class="g_pic col-md-4 my-md-3">
+                        <img class="" src="imagenes/ivc/BRB/imagen-06.png" alt="Barrio Rodrigo Bueno - Ejecutado">
                     </div>
                 </div>
             </div>
-            <div class="border-0 col-12 tab-pane fade" id="nav-profile" role="tabpanel"
-                aria-labelledby="nav-profile-tab">...</div>
-            <div class="border-0 col-12 tab-pane fade" id="nav-contact" role="tabpanel"
-                aria-labelledby="nav-contact-tab">...</div>
+            <div class="border-0 col-12 tab-pane fade" id="nav-fr" role="tabpanel" aria-labelledby="nav-profile-tab">...
+            </div>
+            <div class="border-0 col-12 tab-pane fade" id="nav-bpf" role="tabpanel" aria-labelledby="nav-contact-tab">
+                ...</div>
         </div>
     </section>
     <!-------------------------------------------- Section Contact ------------------------------------------->
