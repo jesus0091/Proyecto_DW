@@ -11,14 +11,20 @@ a {
 
     .title_works {
         display: flex;
-        justify-content: start;
+        justify-content: center;
+        backdrop-filter: blur(5px);
         align-items: center;
         font-family: 'Lato', sans-serif;
-        color: darken($dodger-blue, 30%);
+        color: $white;
         border-top: 1px solid rgba($white-smoke, 0.2);
         border-bottom: 1px solid rgba($white-smoke, 0.2);
-        margin-bottom: 15px;
-        text-transform: uppercase;
+        margin-bottom: 30px;
+
+        @media only screen and (min-width: 576px) {
+            color: darken($dodger-blue, 30%);
+            border: none;
+            backdrop-filter: none;
+        }
 
         .icon_works {
             height: 25px;
@@ -56,6 +62,11 @@ a {
             color: $white;
 
 
+            @media only screen and (min-width: 576px) {
+                font-size: 18px;
+                line-height: 1.1;
+                color: darken($dodger-blue, 35%);
+            }
             @media only screen and (min-width: 768px) {
                 font-size: 30px;
                 line-height: 1.1;
@@ -65,18 +76,21 @@ a {
 
         .card_ivc {
             border-radius: 15px;
-            background: darken(transparentize($dodger-blue, 0.1), 35%);
+            background: darken(transparentize($dodger-blue, 0.2), 35%);
+            background-image: url(../imagenes/bg-card-01.png);
+            background-size: 100%;
             backdrop-filter: blur(5px);
             position: relative;
+            min-height: 100px;
 
             @media only screen and (min-width: 768px) {
-                border-radius: 5px 20px 20px 20px;
+                // border-radius: 5px 20px 20px 20px;
                 min-height: 300px;
             }
 
             @media only screen and (min-width: 992px) {
-                border-radius: 35px 5px 5px 35px;
-                min-height: 300px;
+                // border-radius: 35px 5px 5px 35px;
+                min-height: 350px;
             }
 
             img {
@@ -129,40 +143,6 @@ a {
                     }
                 }
 
-
-            }
-
-            .i_btn {
-
-                span {
-                    color: $white-smoke;
-                    font-size: 16px;
-                }
-
-                a {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    color: darken(rgba(14, 141, 253), 30%);
-                    border-radius: 1000px;
-                    border: none !important;
-                    background-color: darken(rgba(245, 243, 244, 0.932), 5%);
-                    width: 30px;
-                    height: 30px;
-                    text-decoration: none;
-
-                    &:hover {
-                        color: white;
-                        background-color: darken(rgba(14, 141, 253), 20%);
-                    }
-                }
-
-                @media only screen and (min-width: 768px) {
-                    position: absolute;
-                    bottom: 1.5rem;
-                    right: 1rem;
-
-                }
 
             }
 
