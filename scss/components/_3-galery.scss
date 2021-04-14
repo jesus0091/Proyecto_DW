@@ -3,26 +3,72 @@
         // min-height: 100vh;
     } 
 
+    // .title_galery {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     font-family: 'Lato', sans-serif;
+    //     color: darken($dodger-blue, 30%);
+    //     backdrop-filter: blur(5px);
+    //     border-top: 1px solid rgba($white-smoke, 0.2);
+    //     border-bottom: 1px solid rgba($white-smoke, 0.2);
+    //     margin-bottom: 30px;
+        
+    //     .icon_galery {
+    //         height: 50px;
+    //     }
+    //     .text_galery{
+    //         font-size: 50px;
+    //         margin-left: 10px;
+    //     }
+
+    //     @media only screen and (min-width: 992px) {
+    //         font-size: 50px;
+    //         text-align: end;
+    //         margin: 50px 0;
+    //     }
+    // }
+
+
     .title_galery {
         display: flex;
         justify-content: center;
+        backdrop-filter: blur(5px);
         align-items: center;
         font-family: 'Lato', sans-serif;
-        color: darken($dodger-blue, 30%);
-        
-        .icon_galery {
-            height: 50px;
+        color: $white;
+        border-top: 1px solid rgba($white-smoke, 0.2);
+        border-bottom: 1px solid rgba($white-smoke, 0.2);
+        margin-bottom: 30px;
+
+        @media only screen and (min-width: 576px) {
+            color: darken($dodger-blue, 30%);
+            border: none;
+            backdrop-filter: none;
         }
-        .text_galery{
-            font-size: 50px;
-            margin-left: 10px;
+
+        .icon_galery {
+            height: 25px;
+        }
+
+        .text_galery {
+            font-size: 25px;
+            margin: 0 0 0 5px;
         }
 
         @media only screen and (min-width: 992px) {
-            font-size: 50px;
-            text-align: end;
-            margin: 50px 0;
+            .icon_galery {
+                height: 50px;
+            }
+
+            .text_galery {
+                font-size: 50px;
+                margin: 0 0 0 10px;
+            }
+
+            margin-bottom: 50px;
         }
+
     }
     nav{
         .navigation {
@@ -73,5 +119,19 @@
                 
             }
         }
+    }
+    .galery_carousel {
+        padding: 15px 0;
+        background: rgba($white-smoke, 0.6);
+        border-radius: 15px;
+        ol {
+            li {
+                width: 6px !important;
+                height: 6px !important;
+                border-radius: 100px;
+                border: none;
+            }
+        }
+        
     }
 }
