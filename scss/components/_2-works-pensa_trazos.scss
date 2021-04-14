@@ -9,6 +9,8 @@
     .pensa_profile {
         border-radius: 15px;
         background: darken(transparentize($dodger-blue, 0.1), 35%);
+        background-image: url(../imagenes/pensa_trazos/bg-pensa_card.png);
+        background-size: 100%;
         backdrop-filter: blur(5px);
         position: relative;
         min-height: 100px;
@@ -97,7 +99,7 @@
         
     }
     .pensa_footer {
-        background: darken(transparentize($dodger-blue, 0.1), 35%);
+        background: darken(transparentize($dodger-blue, 0.1), 35%);     
         border-radius: 50px;
         color: $white;
 

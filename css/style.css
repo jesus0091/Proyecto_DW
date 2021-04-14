@@ -503,31 +503,31 @@ header ul a .i_svg {
   animation: pang-animation 1.2s ease-out forwards;
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(1) {
-  transform: translate(23px, 30%) rotate(40deg);
+  transform: translate(-14px, 30%) rotate(40deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(2) {
-  transform: translate(10px, 30%) rotate(80deg);
+  transform: translate(22px, 30%) rotate(80deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(3) {
-  transform: translate(16px, 30%) rotate(120deg);
+  transform: translate(12px, 30%) rotate(120deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(4) {
-  transform: translate(11px, 30%) rotate(160deg);
+  transform: translate(5px, 30%) rotate(160deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(5) {
-  transform: translate(24px, 30%) rotate(200deg);
+  transform: translate(19px, 30%) rotate(200deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(6) {
-  transform: translate(8px, 30%) rotate(240deg);
+  transform: translate(19px, 30%) rotate(240deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(7) {
-  transform: translate(-9px, 30%) rotate(280deg);
+  transform: translate(17px, 30%) rotate(280deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(8) {
-  transform: translate(20px, 30%) rotate(320deg);
+  transform: translate(-21px, 30%) rotate(320deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(9) {
-  transform: translate(22px, 30%) rotate(360deg);
+  transform: translate(18px, 30%) rotate(360deg);
 }
 .wrapper input:checked ~ .btn {
   animation: plus-animation 0.5s ease-out forwards;
@@ -715,7 +715,7 @@ a {
 }
 .works .ivc .card_ivc {
   border-radius: 15px;
-  background: rgba(1, 47, 88, 0.8);
+  background: rgba(1, 47, 88, 0.9);
   background-image: url(../imagenes/bg-card-01.png);
   background-size: 100%;
   backdrop-filter: blur(5px);
@@ -789,13 +789,17 @@ a {
   backdrop-filter: blur(5px);
 }
 .works .ivc .card .card-header button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  letter-spacing: 0.5px;
-  font-size: 15px;
+  color: #013d71;
+  font-size: 18px;
   border: none;
+}
+.works .ivc .card .card-header button text-muted {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
 }
 @media only screen and (min-width: 768px) {
   .works .ivc .card .card-header button {
@@ -825,6 +829,8 @@ a {
 .pensa_trazos .pensa_profile {
   border-radius: 15px;
   background: rgba(1, 47, 88, 0.9);
+  background-image: url(../imagenes/pensa_trazos/bg-pensa_card.png);
+  background-size: 100%;
   backdrop-filter: blur(5px);
   position: relative;
   min-height: 100px;
