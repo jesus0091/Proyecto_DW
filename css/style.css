@@ -115,10 +115,23 @@ header ul a .i_svg {
   }
 }
 .s_about .img-about-content img {
+  position: relative;
   text-align: center;
+  border-radius: 1000px;
+  height: 300px;
+  width: 300px;
+  border: 10px solid #013d71;
+}
+.s_about .img-about-content::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 22px;
+  right: 60px;
   border-radius: 100px;
-  height: 250px;
-  width: 250px;
+  background-color: darkgoldenrod;
+  border: 5px solid #013d71;
 }
 .s_about .c-about {
   align-items: center;
@@ -503,31 +516,31 @@ header ul a .i_svg {
   animation: pang-animation 1.2s ease-out forwards;
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(1) {
-  transform: translate(16px, 30%) rotate(40deg);
+  transform: translate(2px, 30%) rotate(40deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(2) {
-  transform: translate(10px, 30%) rotate(80deg);
+  transform: translate(-15px, 30%) rotate(80deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(3) {
-  transform: translate(9px, 30%) rotate(120deg);
+  transform: translate(-8px, 30%) rotate(120deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(4) {
-  transform: translate(16px, 30%) rotate(160deg);
+  transform: translate(2px, 30%) rotate(160deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(5) {
-  transform: translate(1px, 30%) rotate(200deg);
+  transform: translate(-10px, 30%) rotate(200deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(6) {
-  transform: translate(-12px, 30%) rotate(240deg);
+  transform: translate(18px, 30%) rotate(240deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(7) {
-  transform: translate(15px, 30%) rotate(280deg);
+  transform: translate(-18px, 30%) rotate(280deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(8) {
-  transform: translate(-20px, 30%) rotate(320deg);
+  transform: translate(16px, 30%) rotate(320deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(9) {
-  transform: translate(16px, 30%) rotate(360deg);
+  transform: translate(18px, 30%) rotate(360deg);
 }
 .wrapper input:checked ~ .btn {
   animation: plus-animation 0.5s ease-out forwards;
@@ -1043,6 +1056,26 @@ a {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.5px;
+}
+
+.img_md_galery {
+  max-height: 280px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.md_galery {
+  padding: 15px 0 0 0;
+  background: rgba(245, 243, 244, 0.6);
+  border-radius: 15px;
+}
+
+.caption_md_galery {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /*------------------------------------- CONTACT ------------------------------------*/

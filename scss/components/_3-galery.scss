@@ -154,3 +154,23 @@
         
     }
 }
+.img_md_galery {
+    max-height: 280px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+
+    
+
+}
+.md_galery {
+    padding: 15px 0 0 0;
+    background: rgba($white-smoke, 0.6);
+    border-radius: 15px;
+}
+.caption_md_galery {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(black, 0.6);
+}
