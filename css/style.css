@@ -122,6 +122,19 @@ header ul a .i_svg {
   width: 300px;
   border: 10px solid #013d71;
 }
+@media only screen and (min-width: 768px) {
+  .s_about .img-about-content img {
+    height: 215px;
+    width: 215px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .s_about .img-about-content img {
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+  }
+}
 .s_about .img-about-content::after {
   content: "";
   position: absolute;
@@ -132,6 +145,18 @@ header ul a .i_svg {
   border-radius: 100px;
   background: white;
   border: 5px solid #013d71;
+}
+@media only screen and (min-width: 768px) {
+  .s_about .img-about-content::after {
+    bottom: 7px;
+    right: 60px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .s_about .img-about-content::after {
+    bottom: 20px;
+    right: 60px;
+  }
 }
 .s_about .c-about {
   align-items: center;
@@ -516,31 +541,31 @@ header ul a .i_svg {
   animation: pang-animation 1.2s ease-out forwards;
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(1) {
-  transform: translate(-9px, 30%) rotate(40deg);
+  transform: translate(20px, 30%) rotate(40deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(2) {
-  transform: translate(-16px, 30%) rotate(80deg);
+  transform: translate(8px, 30%) rotate(80deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(3) {
-  transform: translate(-15px, 30%) rotate(120deg);
+  transform: translate(24px, 30%) rotate(120deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(4) {
-  transform: translate(-4px, 30%) rotate(160deg);
+  transform: translate(6px, 30%) rotate(160deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(5) {
-  transform: translate(7px, 30%) rotate(200deg);
+  transform: translate(-20px, 30%) rotate(200deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(6) {
-  transform: translate(-12px, 30%) rotate(240deg);
+  transform: translate(10px, 30%) rotate(240deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(7) {
   transform: translate(-22px, 30%) rotate(280deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(8) {
-  transform: translate(15px, 30%) rotate(320deg);
+  transform: translate(7px, 30%) rotate(320deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(9) {
-  transform: translate(-11px, 30%) rotate(360deg);
+  transform: translate(-6px, 30%) rotate(360deg);
 }
 .wrapper input:checked ~ .btn {
   animation: plus-animation 0.5s ease-out forwards;
@@ -714,12 +739,12 @@ a {
 }
 @media only screen and (min-width: 576px) {
   .works .ivc .slogan_ivc {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.1;
     color: #012f58;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .works .ivc .slogan_ivc {
     font-size: 30px;
     line-height: 1.1;
@@ -742,7 +767,7 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .works .ivc .card_ivc {
-    min-height: 350px;
+    min-height: 310px;
   }
 }
 .works .ivc .card_ivc img {
@@ -796,6 +821,11 @@ a {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
+}
+@media only screen and (min-width: 576px) {
+  .works .ivc .card {
+    border: 1px solid #013d71;
+  }
 }
 .works .ivc .card .card-header {
   background-color: rgba(255, 255, 255, 0.2) !important;
@@ -857,7 +887,7 @@ a {
 }
 @media only screen and (min-width: 992px) {
   .pensa_trazos .pensa_profile {
-    min-height: 350px;
+    min-height: 310px;
   }
 }
 .pensa_trazos .pensa_profile img {
@@ -907,7 +937,7 @@ a {
 }
 .pensa_trazos .pensa_carousel {
   padding: 15px 0;
-  background: rgba(245, 243, 244, 0.6);
+  background: rgba(1, 61, 113, 0.2);
   border-radius: 15px;
 }
 .pensa_trazos .pensa_carousel ol li {
@@ -916,10 +946,24 @@ a {
   border-radius: 100px;
   border: none;
 }
+.pensa_trazos .pensa {
+  padding: 15px 13px;
+  background: rgba(1, 61, 113, 0.2);
+  border-radius: 15px;
+}
+.pensa_trazos .pensa img:hover {
+  transform: scale(1.5);
+  transition: all ease 0.5s;
+}
 .pensa_trazos .pensa_footer {
   background: rgba(1, 47, 88, 0.9);
   border-radius: 50px;
   color: white;
+}
+@media only screen and (min-width: 768px) {
+  .pensa_trazos .pensa_footer {
+    border-radius: 5px;
+  }
 }
 .pensa_trazos .pensa_footer span {
   display: flex;
@@ -1030,7 +1074,7 @@ a {
 }
 .s_galery .galery_carousel {
   padding: 15px 0;
-  background: rgba(245, 243, 244, 0.6);
+  background: rgba(1, 61, 113, 0.2);
   border-radius: 15px;
 }
 .s_galery .galery_carousel ol li {
@@ -1059,15 +1103,20 @@ a {
 }
 
 .img_md_galery {
-  max-height: 280px;
+  max-height: 200px;
   overflow: hidden;
   margin-bottom: 15px;
   position: relative;
 }
+@media only screen and (min-width: 992px) {
+  .img_md_galery {
+    max-height: 280px;
+  }
+}
 
 .md_galery {
   padding: 15px 0 0 0;
-  background: rgba(245, 243, 244, 0.6);
+  background: rgba(1, 61, 113, 0.2);
   border-radius: 15px;
 }
 

@@ -1,5 +1,5 @@
 @import 'variables.scss';
-    
+
 .pensa_trazos {
     display: flex;
     align-items: start;
@@ -22,7 +22,7 @@
 
         @media only screen and (min-width: 992px) {
             // border-radius: 35px 5px 5px 35px;
-            min-height: 350px;
+            min-height: 310px;
         }
 
         img {
@@ -79,10 +79,12 @@
         }
 
     }
+
     .pensa_carousel {
         padding: 15px 0;
-        background: rgba($white-smoke, 0.6);
+        background: darken(rgba($dodger-blue, 0.2), 30%);
         border-radius: 15px;
+
         ol {
             li {
                 width: 6px !important;
@@ -91,12 +93,30 @@
                 border: none;
             }
         }
-        
+
     }
+
+    .pensa {
+        padding: 15px 13px;
+        background: darken(rgba($dodger-blue, 0.2), 30%);
+        border-radius: 15px;
+
+        img {
+            &:hover {
+                transform: scale(1.5);
+                transition: all ease .5s;
+            }
+        }
+    }
+
     .pensa_footer {
         background: darken(transparentize($dodger-blue, 0.1), 35%);
         border-radius: 50px;
         color: $white;
+
+        @media only screen and (min-width: 768px) {
+            border-radius: 5px;
+        }
 
         span {
             @include center;
@@ -111,21 +131,16 @@
             font-size: 16px;
             border-radius: 1000px;
             margin: 5px;
-          }
-           
-          .inst {
+        }
+
+        .inst {
             background-color: rgba(255, 20, 145);
             color: white;
-      
+
             &:hover {
-              background: linear-gradient(70deg, rgb(255, 174, 0.6) 10%, rgba(255, 35, 83) 40%, rgba(124, 34, 128) 80%);
+                background: linear-gradient(70deg, rgb(255, 174, 0.6) 10%, rgba(255, 35, 83) 40%, rgba(124, 34, 128) 80%);
             }
-          }
+        }
     }
 
 }
-    
-
-    
-
-

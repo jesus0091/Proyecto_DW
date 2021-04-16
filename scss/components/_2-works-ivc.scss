@@ -63,11 +63,11 @@ a {
 
 
             @media only screen and (min-width: 576px) {
-                font-size: 18px;
+                font-size: 22px;
                 line-height: 1.1;
                 color: darken($dodger-blue, 35%);
             }
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 992px) {
                 font-size: 30px;
                 line-height: 1.1;
                 color: darken($dodger-blue, 35%);
@@ -90,7 +90,7 @@ a {
 
             @media only screen and (min-width: 992px) {
                 // border-radius: 35px 5px 5px 35px;
-                min-height: 350px;
+                min-height: 310px;
             }
 
             img {
@@ -154,6 +154,11 @@ a {
             border-radius: 15px;
             background-color: rgba($white, 0.6);
             backdrop-filter: blur(5px);
+
+            @media only screen and (min-width: 576px) {
+                border: 1px solid darken($dodger-blue, 30%);
+                
+            }
 
             .card-header {
                 background-color: rgba($white, 0.2) !important;

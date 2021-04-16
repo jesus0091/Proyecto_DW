@@ -122,7 +122,7 @@
     }
     .galery_carousel {
         padding: 15px 0;
-        background: rgba($white-smoke, 0.6);
+        background: darken(rgba($dodger-blue, 0.2), 30%);
         border-radius: 15px;
         ol {
             li {
@@ -155,17 +155,18 @@
     }
 }
 .img_md_galery {
-    max-height: 280px;
+    max-height: 200px;
     overflow: hidden;
     margin-bottom: 15px;
     position: relative;
 
-    
-
+    @media only screen and (min-width: 992px) {
+        max-height: 280px;
+    }
 }
 .md_galery {
     padding: 15px 0 0 0;
-    background: rgba($white-smoke, 0.6);
+    background: darken(rgba($dodger-blue, 0.2), 30%);
     border-radius: 15px;
 }
 .caption_md_galery {
