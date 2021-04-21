@@ -16,12 +16,10 @@
         min-height: 100px;
 
         @media only screen and (min-width: 768px) {
-            // border-radius: 5px 20px 20px 20px;
             min-height: 300px;
         }
 
         @media only screen and (min-width: 992px) {
-            // border-radius: 35px 5px 5px 35px;
             min-height: 310px;
         }
 
@@ -74,10 +72,7 @@
                     font-size: 16px;
                 }
             }
-
-
         }
-
     }
 
     .pensa_carousel {
@@ -93,7 +88,6 @@
                 border: none;
             }
         }
-
     }
 
     .pensa {
@@ -142,5 +136,4 @@
             }
         }
     }
-
 }

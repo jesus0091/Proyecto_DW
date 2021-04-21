@@ -104,6 +104,7 @@ header ul a .i_svg {
   box-shadow: 0px 10px 9px rgba(0, 0, 0, 0.4);
 }
 
+/*============================================== ABOUT ============================================*/
 @media only screen and (min-width: 992px) {
   .s_about {
     min-height: 50vh;
@@ -372,8 +373,6 @@ header ul a .i_svg {
   width: 2px;
   height: 100%;
   z-index: -1;
-  background-color: var(--dodger_blue);
-  box-shadow: 2px 2px 2px var(--oxford_blue), 0.5, -2px -2px 2px var(--beau_blue), 0.5;
 }
 
 .timeline-content h2 {
@@ -541,31 +540,31 @@ header ul a .i_svg {
   animation: pang-animation 1.2s ease-out forwards;
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(1) {
-  transform: translate(20px, 30%) rotate(40deg);
+  transform: translate(-11px, 30%) rotate(40deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(2) {
-  transform: translate(8px, 30%) rotate(80deg);
+  transform: translate(-1px, 30%) rotate(80deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(3) {
-  transform: translate(24px, 30%) rotate(120deg);
+  transform: translate(3px, 30%) rotate(120deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(4) {
-  transform: translate(6px, 30%) rotate(160deg);
+  transform: translate(-16px, 30%) rotate(160deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(5) {
-  transform: translate(-20px, 30%) rotate(200deg);
+  transform: translate(-14px, 30%) rotate(200deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(6) {
-  transform: translate(10px, 30%) rotate(240deg);
+  transform: translate(-24px, 30%) rotate(240deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(7) {
-  transform: translate(-22px, 30%) rotate(280deg);
+  transform: translate(-6px, 30%) rotate(280deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(8) {
-  transform: translate(7px, 30%) rotate(320deg);
+  transform: translate(20px, 30%) rotate(320deg);
 }
 .wrapper input:checked ~ svg .shape:nth-of-type(9) {
-  transform: translate(-6px, 30%) rotate(360deg);
+  transform: translate(-14px, 30%) rotate(360deg);
 }
 .wrapper input:checked ~ .btn {
   animation: plus-animation 0.5s ease-out forwards;
@@ -680,6 +679,7 @@ header ul a .i_svg {
   margin: 10px;
 }
 
+/*============================================== ABOUT ============================================*/
 a {
   text-decoration: none;
 }
